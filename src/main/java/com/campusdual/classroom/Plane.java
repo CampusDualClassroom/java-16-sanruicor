@@ -1,6 +1,6 @@
 package com.campusdual.classroom;
 
-public class Plane{
+public class Plane implements IMachine {
 
 	private final String name;
 
@@ -18,5 +18,17 @@ public class Plane{
 
 	public void fly() {
 		System.out.println("El avión está volando");
+	}
+
+	public void start() {
+		System.out.println("El avión está encendido");
+	}
+
+	public void stop() {
+		System.out.println("El avión está apagado");
+	}
+
+	public void maintenance() {
+		System.out.println("El avión está en mantenimiento");
 	}
 }
